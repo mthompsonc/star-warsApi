@@ -13,7 +13,7 @@ $('#character').click(function(){
   $.getJSON(apipol, function(data){
     for(i in data.results){
       console.log(data.results[i]);
-      containerImg.append(data.results[i].name);
+      containerImg.append(`<div class="col-xs-4 col-sm-4">${data.results[i].name}</div>`);
     }
   })
 })
@@ -24,7 +24,7 @@ $('#starship').click(function(){
   $.getJSON(apistarship, function(data){
     for(i in data.results){
       console.log(data.results[i]);
-      containerImg.append(data.results[i].name);
+      containerImg.append(`<div class="col-xs-4 col-sm-4">${data.results[i].name}</div>`);
     }
   })
 })
@@ -35,7 +35,7 @@ $('#planet').click(function(){
   $.getJSON(apiplanet, function(data){
     for(i in data.results){
       console.log(data.results[i]);
-      containerImg.append(data.results[i].name);
+      containerImg.append(`<div class="col-xs-4 col-sm-4">${data.results[i].name}</div>`);
     }
   })
 })
