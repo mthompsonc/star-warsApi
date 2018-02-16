@@ -1,6 +1,6 @@
 body{
   padding: 0;
-  margin: 2.5em;
+  margin: 2.1em;
   background-color: #000;
   color:#FFF;
 }
@@ -21,4 +21,18 @@ button{
   margin-top: 1em;
   margin-left: 0.3em;
   margin-right: 0.3em;
+}
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:active{
+  color: #FFFFFF;
+  text-decoration: none;
 }

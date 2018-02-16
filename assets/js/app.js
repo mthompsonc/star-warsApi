@@ -13,7 +13,7 @@ $('#character').click(function(){
   $.getJSON(apipol, function(data){
     for(i in data.results){
       console.log(data.results[i]);
-      containerImg.append(`<div href=" "class="col-xs-6 col-sm-6 center-block boxname">${data.results[i].name}</div>`);
+      containerImg.append(`<div class="col-xs-6 col-sm-6 center-block boxname"><a href="" data-toggle="modal" data-target=".bs-example-modal-sm">${data.results[i].name}</a></div>`);
     }
   })
 })
@@ -24,7 +24,9 @@ $('#starship').click(function(){
   $.getJSON(apistarship, function(data){
     for(i in data.results){
       console.log(data.results[i]);
-      containerImg.append(`<div href=" "class="col-xs-6 col-sm-6 center-block boxname">${data.results[i].name}</div>`);
+      containerImg.append(`<div class="col-xs-6 col-sm-6 center-block boxname"><a href="" data-toggle="modal" data-target=".bs-example-modal-sm">${data.results[i].name}</a></div>`);
+      $(".modal-content").empty();
+      $('.modal-content').append(`<div class="row"><div class="col-xs-12 col-sm-12">${data.results[i].name}</div></div>`);
     }
   })
 })
@@ -35,7 +37,7 @@ $('#planet').click(function(){
   $.getJSON(apiplanet, function(data){
     for(i in data.results){
       console.log(data.results[i]);
-      containerImg.append(`<div href=" "class="col-xs-6 col-sm-6 center-block boxname">${data.results[i].name}</div>`);
+      containerImg.append(`<div class="col-xs-6 col-sm-6 center-block boxname"><a href="" data-toggle="modal" data-target=".bs-example-modal-sm">${data.results[i].name}</a></div>`);
     }
   })
 })
